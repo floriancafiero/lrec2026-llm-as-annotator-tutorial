@@ -83,7 +83,7 @@ An up-to-date detailed reading list will be provided.
 **Florian Cafiero** (Université Paris Sciences et Lettres – PSL; École nationale des chartes – PSL)  
 Fellow in Artificial Intelligence for the Humanities and Social Sciences at PSL and researcher at the Centre Jean-Mabillon (École nationale des chartes – PSL). His work spans digital humanities and computational social science, with a focus on low-resource and historical corpora, stylometry and authorship attribution, and practical NLP workflows (LLM-as-annotator, OCR/HTR pipelines) for heritage collections.
 
-**Chahan Vidal-Gorène** (École nationale des chartes – PSL)  
+**Chahan Vidal-Gorène** (École nationale des chartes – PSL; LIPN)
 Lecturer and researcher in digital humanities, and director of the Digital Humanities Master's program at PSL University. His research focuses on computational paleography and the analysis of under-resourced languages (HTR, linguistic analysis). He is a member of the ANR DALiH project and the DISTAM consortium for data creation and NLP model development for non-Latin languages (mainly Armenian, Arabic, and Chinese), and CEO and founder of Calfa.
 
 **Bastien Kindt** (Université catholique de Louvain)  

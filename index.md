@@ -75,8 +75,54 @@ Dataset licensing, data sovereignty and community co-design (CARE / OCAP princip
 
 ## Reading list (indicative)
 
-An up-to-date detailed reading list will be provided.
+### General overviews
+- Tan, Zhen, Dawei Li, Song Wang, Alimohammad Beigi, Bohan Jiang, Amrita Bhattacharjee, Mansooreh Karami, Jundong Li, Lu Cheng, and Huan Liu. 2024. *Large Language Models for Data Annotation and Synthesis: A Survey*. EMNLP 2024.  
+  A very useful overview of LLM-based annotation, covering generation, assessment, and downstream use.  
+  https://aclanthology.org/2024.emnlp-main.54/
 
+- Li, Minzhi, Taiwei Shi, Caleb Ziems, Min-Yen Kan, Nancy Chen, Zhengyuan Liu, and Diyi Yang. 2023. *CoAnnotating: Uncertainty-Guided Work Allocation between Human and Large Language Models for Data Annotation*. EMNLP 2023.  
+  A strong reference for hybrid human–LLM annotation workflows, especially when uncertain cases are routed to humans.  
+  https://aclanthology.org/2023.emnlp-main.92/
+
+### Reliability, confidence, and workflow design
+- Gligoric, Kristina, Tijana Zrnic, Cinoo Lee, Emmanuel Candès, and Dan Jurafsky. 2025. *Can Unconfident LLM Annotations Be Used for Confident Conclusions?* NAACL 2025.  
+  Useful for discussing when noisy or uncertain LLM annotations may still support valid aggregate analyses.  
+  https://aclanthology.org/2025.naacl-long.179/
+
+- Bibal, Adrien, Nathaniel Gerlek, Goran Muric, Elizabeth Boschee, Steven C. Fincke, Mike Ross, and Steven N. Minton. 2025. *Automating Annotation Guideline Improvements using LLMs: A Case Study*. CoMeDi 2025.  
+  Particularly relevant for hands-on sessions focused on annotation guidelines, iteration, and reproducibility.  
+  https://aclanthology.org/2025.comedi-1.13/
+
+- Schaefer, Robin. 2025. *On Integrating LLMs Into an Argument Annotation Workflow*. Argument Mining Workshop 2025.  
+  A good workflow-oriented paper on how LLMs can be inserted into a real annotation pipeline rather than used as simple black-box labelers.  
+  https://aclanthology.org/2025.argmining-1.8/
+
+### Recent task-oriented studies
+- Lindahl, Anna. 2025. *LLMs as annotators of argumentation*. *SEM 2025.  
+  A recent study on using LLMs for a non-trivial annotation task with structured labels and detailed guidelines.  
+  https://aclanthology.org/2025.starsem-1.19/
+
+- Kasner, Zdenek, Vilém Zouhar, Patrícia Schmidtová, Ivan Kartác, Kristýna Onderková, Ondrej Plátek, Dimitra Gkatzia, Saad Mahamood, Ondrej Dusek, and Simone Balloccu. 2026. *LLMs as Span Annotators: A Comparative Study of LLMs and Humans*. MME 2026.  
+  Especially relevant for tutorials because it compares LLMs and humans on span annotation tasks, not just simple classification.  
+  https://aclanthology.org/2026.mme-main.1/
+
+### Low-resource, multilingual, and difficult settings
+- Jadhav, Suramya, Abhay Shanbhag, Amogh Thakurdesai, Ridhima Sinare, and Raviraj Joshi. 2025. *On Limitations of LLM as Annotator for Low Resource Languages*. ICNLSP 2025.  
+  A very relevant paper for discussing failure cases and practical limits in low-resource settings.  
+  https://aclanthology.org/2025.icnlsp-1.27/
+
+- Kellert, Olga, Nemika Tyagi, Muhammad Imran, Nelvin Licona-Guevara, and Carlos Gómez-Rodríguez. 2025. *Parsing the Switch: LLM-Based UD Annotation for Complex Code-Switched and Low-Resource Languages*. Findings of EMNLP 2025.  
+  A strong reference for multilingual annotation and structurally difficult data.  
+  https://aclanthology.org/2025.findings-emnlp.863/
+
+- Cui, Xinyi, Xintong Li, Minhong Tan, and Nanyun Peng. 2025. *Annotation Bias in Multilingual Large Language Models*. OMMM 2025.  
+  Useful for discussing bias, cultural mismatch, and annotation subjectivity in multilingual settings.  
+  https://aclanthology.org/2025.ommm-1.1.pdf
+
+### Historical and under-resourced languages
+- Vidal-Gorène, Chahan, Bastien Kindt, and Florian Cafiero. 2026. *Under-resourced studies of under-resourced languages: lemmatization and POS-tagging with LLM annotators for historical Armenian, Georgian, Greek and Syriac*. LoResLM 2026.  
+  Directly relevant to tutorial participants interested in historical and under-resourced language annotation.  
+  https://aclanthology.org/2026.loreslm-1.28/
 ---
 
 ## Instructors

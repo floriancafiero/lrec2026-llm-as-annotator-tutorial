@@ -81,7 +81,7 @@ An up-to-date detailed reading list will be provided.
 
 ## Instructors
 
-**Florian Cafiero** (Université Paris Sciences et Lettres – PSL; École nationale des chartes – PSL)  
+**Florian Cafiero** (EPITA Paris & Université Paris Sciences et Lettres – PSL)  
 Associate professor at EPITA Paris and researcher at the Centre Jean-Mabillon (École nationale des chartes – PSL). His work spans digital humanities and computational social science, with a focus on low-resource and historical corpora, stylometry and authorship attribution, and practical NLP workflows (LLM-as-annotator, OCR/HTR pipelines) for heritage collections.
 
 **Chahan Vidal-Gorène** (École nationale des chartes – PSL; LIPN)

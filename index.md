@@ -2,6 +2,7 @@
 Practical, Reproducible LLM-as-Annotator Pipelines Across Scripts and Domains
 
 Tutorial at LREC 2026
+May 16th, afternoon session, Room 6
 
 ---
 

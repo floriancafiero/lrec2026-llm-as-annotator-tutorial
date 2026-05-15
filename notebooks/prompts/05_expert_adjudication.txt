@@ -1,0 +1,59 @@
+You are assisting an expert adjudicator.
+
+Compare a model prediction with a reference or expert annotation. Your task is not to override the expert annotation, but to identify where the model differs and whether the difference may reflect a genuine alternative convention.
+
+Language: {language}
+Script: {script}
+Domain: {domain}
+Sentence ID: {sentence_id}
+
+Original text:
+{text}
+
+Input tokens:
+{tokens}
+
+Model prediction:
+{prediction}
+
+Reference or expert annotation:
+{gold_or_expert_annotation}
+
+Return only valid JSON.
+
+For each token where there is a difference, report:
+- token index;
+- surface form;
+- model annotation;
+- reference annotation;
+- difference type;
+- whether the model output is plainly wrong, conventionally different, or ambiguous;
+- short note.
+
+Use the following difference types:
+- "upos"
+- "lemma"
+- "feature"
+- "confidence"
+- "comment"
+- "alignment"
+- "other"
+
+Expected JSON format:
+
+{
+  "sentence_id": "...",
+  "has_differences": true,
+  "differences": [
+    {
+      "token_index": 0,
+      "surface": "...",
+      "difference_type": "...",
+      "model_value": "...",
+      "reference_value": "...",
+      "judgement": "wrong|convention_difference|ambiguous|unclear",
+      "note": "..."
+    }
+  ],
+  "summary": "..."
+}

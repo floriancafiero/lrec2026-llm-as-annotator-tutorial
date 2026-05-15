@@ -73,6 +73,32 @@ Dataset licensing, data sovereignty and community co-design (CARE / OCAP princip
 
 ---
 
+## Materials and setup
+
+The tutorial materials are designed to work in Google Colab. The notebooks default to `USE_API = False`, so participants can run the exercises without API keys, using deterministic fallback predictions.
+
+### Hands-on notebooks
+
+| # | Notebook | Open in Colab |
+|---|---|---|
+| 00 | Setup and data | [Open in Colab](https://colab.research.google.com/github/floriancafiero/lrec2026-llm-as-annotator-tutorial/blob/main/notebooks/00_setup_and_data.ipynb) |
+| 01 | Zero-shot and few-shot prompting | [Open in Colab](https://colab.research.google.com/github/floriancafiero/lrec2026-llm-as-annotator-tutorial/blob/main/notebooks/01_prompting_zero_few_shot.ipynb) |
+| 02 | Structured outputs and validation | [Open in Colab](https://colab.research.google.com/github/floriancafiero/lrec2026-llm-as-annotator-tutorial/blob/main/notebooks/02_structured_outputs_and_validation.ipynb) |
+| 03 | Evaluation and error analysis | [Open in Colab](https://colab.research.google.com/github/floriancafiero/lrec2026-llm-as-annotator-tutorial/blob/main/notebooks/03_evaluation_and_error_analysis.ipynb) |
+| 04 | Sampling and bootstrapping | [Open in Colab](https://colab.research.google.com/github/floriancafiero/lrec2026-llm-as-annotator-tutorial/blob/main/notebooks/04_sampling_and_bootstrapping.ipynb) |
+
+### Supporting resources
+
+- [Participant cheatsheet](handouts/participant_cheatsheet.md)
+- [Colab troubleshooting guide](handouts/colab_troubleshooting.md)
+- [Notebook README](notebooks/README.md)
+- [JSON schema](schemas/pos_lemma_morph_schema.json)
+- [Requirements](requirements.txt)
+
+The sample data used in the notebooks are pedagogical placeholders. They are meant to demonstrate the workflow, not to serve as authoritative linguistic annotations.
+
+---
+
 ## Reading list (indicative)
 
 - Tan, Zhen, Dawei Li, Song Wang, Alimohammad Beigi, Bohan Jiang, Amrita Bhattacharjee, Mansooreh Karami, Jundong Li, Lu Cheng, and Huan Liu. 2024. *Large Language Models for Data Annotation and Synthesis: A Survey*. EMNLP 2024.  
@@ -112,14 +138,6 @@ Lecturer and researcher in digital humanities, and director of the Digital Human
 Researcher at the Institut orientaliste of UCLouvain and specialist in Ancient Greek language. He is the scientific collaborator of the GREgORI project, which develops corpora, tools, and analysis methods for the languages of the Christian East (Ancient Armenian, Ancient Greek, Arabic, Old Georgian, Syriac).
 
 ---
-
-## Materials and setup
-
-- Slides, notebooks, prompts, and minimal datasets will be released under permissive licenses.  
-- The tutorial will rely on cloud notebooks (e.g. Google Colab) as much as possible.  
-- A fallback path with pre-run notebooks will be provided for connectivity-constrained rooms.  
-
-Further practical information (e.g. links to notebooks and datasets) will be added closer to the tutorial date.
 
 ## Acknowledgments
 

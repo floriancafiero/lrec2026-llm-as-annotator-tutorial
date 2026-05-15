@@ -1,0 +1,58 @@
+Classify the error in the following model annotation.
+
+Language: {language}
+Script: {script}
+Domain: {domain}
+Sentence ID: {sentence_id}
+
+Original text:
+{text}
+
+Input tokens:
+{tokens}
+
+Model prediction:
+{prediction}
+
+Reference or expert annotation, if available:
+{gold_or_expert_annotation}
+
+Classify the main error type using one of the following labels:
+
+- "format"
+- "alignment"
+- "tagset"
+- "lemma"
+- "morphology"
+- "script"
+- "domain"
+- "noise"
+- "guideline"
+- "ambiguous"
+- "no_error"
+- "other"
+
+Definitions:
+- "format": malformed JSON, missing fields, wrong data types.
+- "alignment": token added, removed, split, merged, reordered, translated, or transliterated.
+- "tagset": unauthorised label or mismatch with the project tagset.
+- "lemma": wrong lemma, inconsistent normalisation, or dictionary-convention issue.
+- "morphology": wrong or missing feature-value annotation.
+- "script": character, transliteration, or writing-system issue.
+- "domain": error caused by genre-specific, historical, religious, technical, or rare vocabulary.
+- "noise": OCR, HTR, edition, or input corruption issue.
+- "guideline": the annotation guidelines are underspecified.
+- "ambiguous": multiple analyses are plausible even for an expert.
+- "no_error": the model prediction appears correct.
+- "other": none of the above.
+
+Return only valid JSON with the following fields:
+
+{
+  "sentence_id": "...",
+  "main_error_type": "...",
+  "secondary_error_types": ["..."],
+  "severity": "minor|major|critical",
+  "explanation": "...",
+  "recommended_action": "prompt_fix|guideline_revision|preprocessing|expert_review|ignore|other"
+}

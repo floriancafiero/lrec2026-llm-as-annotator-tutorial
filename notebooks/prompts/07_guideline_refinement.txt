@@ -1,0 +1,33 @@
+You are helping improve annotation guidelines after reviewing model errors.
+
+Your task is to identify where the current annotation guidelines are underspecified and propose concise clarifications.
+
+Current guidelines:
+{current_guidelines}
+
+Observed errors:
+{error_cases}
+
+For each proposed guideline change, explain:
+1. what ambiguity or error it addresses;
+2. the proposed wording;
+3. one positive example;
+4. one negative or counterexample, if available;
+5. whether the change affects the prompt, the schema, the tagset, or the evaluation script.
+
+Return only valid JSON with this structure:
+
+{
+  "proposed_revisions": [
+    {
+      "issue": "...",
+      "affected_component": "prompt|schema|tagset|evaluation|preprocessing|other",
+      "proposed_guideline_text": "...",
+      "positive_example": "...",
+      "negative_example": "...",
+      "expected_benefit": "...",
+      "risk_or_tradeoff": "..."
+    }
+  ],
+  "summary": "..."
+}

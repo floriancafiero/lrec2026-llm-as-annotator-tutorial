@@ -1,0 +1,27 @@
+The output must be a JSON object with the following structure:
+
+{
+  "sentence_id": string,
+  "language": string,
+  "tokens": [
+    {
+      "surface": string,
+      "lemma": string or null,
+      "upos": one of the authorised UPOS tags,
+      "features": {
+        "Case": string or null,
+        "Number": string or null,
+        "Gender": string or null,
+        "Person": string or null,
+        "Tense": string or null,
+        "Mood": string or null,
+        "Voice": string or null
+      },
+      "confidence": "low" or "medium" or "high",
+      "comment": string or null
+    }
+  ]
+}
+
+The length of `tokens` must be exactly the same as the number of input tokens.
+Each `surface` value must exactly match the corresponding input token.

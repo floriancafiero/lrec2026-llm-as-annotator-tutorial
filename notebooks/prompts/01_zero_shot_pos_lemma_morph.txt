@@ -1,0 +1,44 @@
+Annotate the following pre-tokenised sentence token by token.
+
+Language: {language}
+Script: {script}
+Domain: {domain}
+Sentence ID: {sentence_id}
+
+Original text:
+{text}
+
+Input tokens:
+{tokens}
+
+Task:
+For each input token, provide:
+1. the original surface form;
+2. a lemma;
+3. a UPOS tag;
+4. selected morphological features;
+5. a confidence value;
+6. an optional short local comment.
+
+Authorised UPOS inventory:
+{upos_inventory}
+
+Authorised morphological features:
+{feature_inventory}
+
+Rules:
+- Return only valid JSON.
+- Do not translate the sentence.
+- Do not transliterate the tokens.
+- Do not normalise the surface forms.
+- Do not add, remove, split, merge, or reorder tokens.
+- The output must contain exactly one annotation per input token.
+- The value of `surface` must exactly match the corresponding input token.
+- Use only the authorised UPOS tags.
+- Use only the authorised feature names and values.
+- If a lemma is uncertain, provide the best candidate and set `confidence` to `"low"`.
+- If a POS tag is uncertain, use the most plausible authorised UPOS tag; use `"X"` only when no better authorised tag is possible.
+- Keep `comment` short and local. Do not provide a full translation.
+
+Expected output schema:
+{schema}

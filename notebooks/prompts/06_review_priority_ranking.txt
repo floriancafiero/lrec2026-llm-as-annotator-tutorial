@@ -1,0 +1,37 @@
+You are helping select examples for expert review in a linguistic annotation project.
+
+Rank the following candidate sentences by how useful they would be for expert review.
+
+Selection should prioritise:
+1. uncertain model predictions;
+2. disagreement between prompts or models;
+3. validation failures;
+4. rare or important linguistic phenomena;
+5. diversity across languages, scripts, domains, and error types;
+6. cases likely to improve guidelines or future few-shot examples.
+
+Do not select only the most difficult examples. A good review batch should be informative and diverse.
+
+Candidates:
+{candidates}
+
+Return only valid JSON with this structure:
+
+{
+  "ranked_candidates": [
+    {
+      "sentence_id": "...",
+      "rank": 1,
+      "priority": "high|medium|low",
+      "main_reason": "...",
+      "signals": {
+        "uncertainty": "low|medium|high",
+        "disagreement": "low|medium|high",
+        "diversity_value": "low|medium|high",
+        "guideline_value": "low|medium|high"
+      },
+      "recommended_for_review": true
+    }
+  ],
+  "batch_summary": "..."
+}

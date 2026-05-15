@@ -1,0 +1,43 @@
+Your previous annotation output failed automatic validation.
+
+You must correct the output so that it satisfies the schema and token-alignment requirements.
+
+Language: {language}
+Script: {script}
+Domain: {domain}
+Sentence ID: {sentence_id}
+
+Original text:
+{text}
+
+Input tokens:
+{tokens}
+
+Validation errors:
+{validation_errors}
+
+Original model output:
+{prediction}
+
+Correction rules:
+- Return only valid JSON.
+- Do not include Markdown fences.
+- Do not include explanatory prose outside the JSON.
+- Do not translate the sentence.
+- Do not transliterate the tokens.
+- Do not normalise the surface forms.
+- Do not add, remove, split, merge, or reorder tokens.
+- The output must contain exactly one annotation per input token.
+- The value of `surface` must exactly match the corresponding input token.
+- Use only authorised UPOS tags.
+- Use only authorised feature names and values.
+- If a linguistic decision is uncertain, mark it with `confidence`, but keep the output valid.
+
+Authorised UPOS inventory:
+{upos_inventory}
+
+Authorised morphological features:
+{feature_inventory}
+
+Expected output schema:
+{schema}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Token-level POS, lemma and morphology annotation",
+  "type": "object",
+  "required": ["sentence_id", "language", "tokens"],
+  "additionalProperties": false,
+  "properties": {
+    "sentence_id": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["surface", "lemma", "upos", "features", "confidence", "comment"],
+        "additionalProperties": false,
+        "properties": {
+          "surface": {
+            "type": "string"
+          },
+          "lemma": {
+            "type": ["string", "null"]
+          },
+          "upos": {
+            "type": "string",
+            "enum": [
+              "ADJ",
+              "ADP",
+              "ADV",
+              "AUX",
+              "CCONJ",
+              "DET",
+              "INTJ",
+              "NOUN",
+              "NUM",
+              "PART",
+              "PRON",
+              "PROPN",
+              "PUNCT",
+              "SCONJ",
+              "SYM",
+              "VERB",
+              "X"
+            ]
+          },
+          "features": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "Case": {
+                "type": ["string", "null"]
+              },
+              "Number": {
+                "type": ["string", "null"]
+              },
+              "Gender": {
+                "type": ["string", "null"]
+              },
+              "Person": {
+                "type": ["string", "null"]
+              },
+              "Tense": {
+                "type": ["string", "null"]
+              },
+              "Mood": {
+                "type": ["string", "null"]
+              },
+              "Voice": {
+                "type": ["string", "null"]
+              }
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "comment": {
+            "type": ["string", "null"]
+          }
+        }
+      }
+    }
+  }
+}

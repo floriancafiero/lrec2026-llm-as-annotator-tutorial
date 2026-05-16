@@ -81,6 +81,8 @@ The tutorial materials are designed to work in Google Colab. The notebooks defau
 
 [Open app in HuggingFace](https://huggingface.co/spaces/ENC-PSL/lrec2026-llm-annotator)
 
+API key (available for 2hours): `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`
+
 ### Hands-on notebooks
 
 | # | Notebook | Open in Colab |

@@ -77,6 +77,10 @@ Dataset licensing, data sovereignty and community co-design (CARE / OCAP princip
 
 The tutorial materials are designed to work in Google Colab. The notebooks default to `USE_API = False`, so participants can run the exercises without API keys, using deterministic fallback predictions.
 
+## Ready-to-us app "LLM as annotators"
+
+[Open app in HuggingFace](https://huggingface.co/spaces/ENC-PSL/lrec2026-llm-annotator-
+
 ### Hands-on notebooks
 
 | # | Notebook | Open in Colab |
